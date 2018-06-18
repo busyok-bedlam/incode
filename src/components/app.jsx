@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from './sidebar';
+import Info from "./info";
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
                 <Sidebar />
             </div>
             <div className="twelve wide column">
+                <Info />
             </div>
         </div>
 
