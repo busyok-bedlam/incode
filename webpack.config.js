@@ -21,7 +21,8 @@ const config = {
     ],
     resolve: {
         extensions: ['.js', '.jsx']
-      }
+    },
+    devtool: "source-map"
 }
 
 
