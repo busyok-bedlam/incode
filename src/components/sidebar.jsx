@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from './search';
-import List from './list';
+import ClientList from '../containers/client-list';
 
 const clients = [
     { name: "client1" },
@@ -15,7 +15,7 @@ const Sidebar = () => (
             <Search/>
         </div>
         <div className="item">
-            <List clientList={clients} />
+            <ClientList  />
         </div>
         
     </div>

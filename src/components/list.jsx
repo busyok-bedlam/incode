@@ -1,15 +1,21 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import ListItem from './list-item';
 
-const List = ({ clientList }) => {
-    return (
-        <div className="ui list">
-            {
-                clientList.map((item, index) => <ListItem client={item} key={index} />)
-            }
-        </div>
-    )
 
+class List extends Component {
+    componentDidMount(){
+        this.props.getClients();
+    }
+    render(){
+        const { clientsList } = this.props;
+        return (
+            <div className="ui list">
+                {
+                    clientsList.map((item, index) => <ListItem client={item} key={index} />)
+                }
+            </div>
+        )  
+    }
 }
 
 export default List;

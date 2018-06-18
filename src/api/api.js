@@ -5,10 +5,7 @@ export default (baseUrl) => {
   }).then(data => data.json())
 
   return {
-    get: fetchCreator('GET'),
-    post: fetchCreator('POST'),
-    patch: fetchCreator('PATCH'),
-    delete: fetchCreator('DELETE'),
-    put: fetchCreator('PUT')
+    get: fetchCreator('GET')
+
   }
 }
