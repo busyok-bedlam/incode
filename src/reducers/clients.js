@@ -1,13 +1,12 @@
 import { handleAction } from 'redux-actions';
 import { setClients } from '../actions';
 
-const initialState = {
-    clients: []
-}
+const initialState = [];
+
 
 const clients = handleAction(
     setClients,
-    (state,{ payload }) => ({ ...state, clients: payload }),
+    (state,{ payload }) => [...payload],
     initialState
 
 )

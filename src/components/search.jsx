@@ -5,8 +5,8 @@ const Search = () => (
 
     <form className="ui form">
         <div className="field">
-            <label>First Name</label>
-            <input type="text" name="first-name" placeholder="First Name"/>
+            <label>Search</label>
+            <input type="text" name="first-name" placeholder="Please select filter"/>
         </div>
     </form>
 )

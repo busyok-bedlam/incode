@@ -17,7 +17,7 @@ const Sidebar = () => (
         <div className="item">
             <ClientList  />
         </div>
-        
+
     </div>
 )
 
