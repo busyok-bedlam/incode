@@ -1,12 +1,7 @@
 import React from 'react';
-import Search from './search';
+import Search from '../containers/search-cont';
 import ClientList from '../containers/client-list';
 
-const clients = [
-    { name: "client1" },
-    { name: "client2" },
-    { name: "client3" }
-]
 
 
 const Sidebar = () => (

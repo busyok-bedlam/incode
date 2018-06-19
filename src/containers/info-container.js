@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import Info from '../components/info';
 
 
+const mapStateToProps = state => ({
+    clientinfo: state.selectedClient
+})
 
-const mapStateToProps = state => {
-  
-}
-export default connect()(Info)
+export default connect(mapStateToProps)(Info)

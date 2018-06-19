@@ -1,9 +1,16 @@
 import React from "react";
+import selectClientAction from '../actions';
 
-const ListItem = ({ client }) => {
+
+const ListItem = ({ client,selectClientAction }) => {
   let { firstName, lastName, avatar } = client.general;
+  const selectHandler = e => {
+    
+    e.preventDefault();
+    selectClientAction(firstName);
+  }
   return (
-      <div className="item ui grid hover-item">
+      <div className="item ui grid hover-item" onClick={selectHandler}>
         <div className="six wide column">
           <div className="image ui container">
             <img src={avatar} alt=""/>

@@ -1,8 +1,8 @@
-import { selectClient } from '../actions';
+import { setSelectedClient } from '../actions';
 import { handleAction } from 'redux-actions';
 
 const selectedClient = handleAction(
-    selectClient,
+    setSelectedClient,
     (state,{payload}) => payload,
     null
 )

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ListItem from "./list-item";
+import ListItem from "../containers/client-item";
 
 class List extends Component {
   componentDidMount() {
@@ -19,7 +19,7 @@ class List extends Component {
     const isClients = clients.length > 0 ;
     return (
       <div >
-        <h2 class="ui header">Clients List </h2>
+        <h2 className="ui header">Clients List </h2>
         <div className="ui divided items">
         {
           isClients ?

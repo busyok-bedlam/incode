@@ -8,7 +8,6 @@ const clients = handleAction(
     setClients,
     (state,{ payload }) => [...payload],
     initialState
-
 )
 
 export default clients;

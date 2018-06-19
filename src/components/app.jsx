@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from './sidebar';
-import Info from "./info";
+import Info from "../containers/info-container";
 
 
 const App = () => {
